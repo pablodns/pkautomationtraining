@@ -1,17 +1,3 @@
-/*
-** Copyright 2020
-** 
-** File: MainClass.java
-** Package: com.mainclass
-** Version: 
-** 
-** 
-** Date				Name				Description
-** ----------------------------------------------------------
-** 04-07-20			pablo				Initial Creation
-** 
-*/
-
 package com.mainclass;
 
 import com.abtraction.Animal;
@@ -28,7 +14,7 @@ public class MainClass {
 		a1.setSound("meow");
 		a2.setSound("barf");
 		System.out.println(a1.getSound());
-		System.out.println(a2.getSound());
+		System.out.println(a.getSound());
 	}
 
 }

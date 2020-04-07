@@ -1,17 +1,3 @@
-/*
-** Copyright 2020
-** 
-** File: Animal.java
-** Package: com.abtraction
-** Version: 
-** 
-** 
-** Date				Name				Description
-** ----------------------------------------------------------
-** 04-07-20			pablo				Initial Creation
-** 
-*/
-
 package com.abtraction;
 
 public abstract class Animal {
