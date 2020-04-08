@@ -1,15 +1,29 @@
 package com.abtraction;
 
 public abstract class Animal {
-	//TODO: Create 2 public Strings: name and sound. 
+	public String name;
+	public String sound;
 	
-	//TODO: create only the constructor for the variable name. 
+	public Animal(String name) {
+		this.name = name; 
+	}
+	
+	public void setName(String name) {
+		this.name = name; 
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public abstract void setSound(String sound);
+	
+	public abstract String getSound();
 
-	//TODO: Create the getter and setter for name. 
-
-	//TODO: Create getter and setter as abstract for sound variable. 
-	//TODO: Create the toString method using the Source in eclipse. 
+	@Override
+	public String toString() {
+		return "Animal [name=" + name + ", sound=" + sound + "]";
+	}
 	
 	
-
+	
 }

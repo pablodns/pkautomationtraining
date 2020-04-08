@@ -1,7 +1,25 @@
 package com.animals;
 import com.abtraction.Animal;
 
-//TODO: Complete this class by extending the abstract class Animal.
-public class Cat{
+public class Cat extends Animal{
+	
+	
+	public Cat(String name) {
+		super(name);
+	}
+
+	@Override
+	public void setSound(String sound) {
+		this.sound = sound;
+	}
+
+	@Override
+	public String getSound() {
+		return sound;
+	}
+	
+	public String getCatOwner(String catOwner) {
+		return "The cat's owner is: " + catOwner;
+	}
 	
 }
