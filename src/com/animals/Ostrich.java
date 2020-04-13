@@ -1,11 +1,13 @@
 package com.animals;
 
 import com.abtraction.*;
+import com.enums.Days;
 import com.interfaces.*;
 
 public class Ostrich extends Animal implements IAnimalBasicActions, IWings{
 
 	public int wingsNumber;
+	//TODO: 08.- Declare a Days variable named day.
 	
 	public Ostrich(String name) {
 		super(name);
@@ -49,8 +51,11 @@ public class Ostrich extends Animal implements IAnimalBasicActions, IWings{
 	
 	@Override
 	public String toString() {
+		//TODO: 10.- Modify this return to include the day the ostrich eats.
 		return "This is the Ostrich class, and i am " + name + " Do i fly? " + fly();
 	}
+	
+	//TODO: 09.- Implement the required set and get methods for Ostrich.
 	
 	
 }
