@@ -6,23 +6,37 @@ import com.animals.Ostrich;
 import com.enums.Days;
 
 public class MainSwitchTasks {
-	//TODO: 11.- Create the main method
 	
 	
 	public static void main(String[] args) {
-		//TODO: 12.- Create an object from the Ostrich class, its name is Rocky.
+		Ostrich o = new Ostrich("Rocky");
 		
-		//TODO: 13.- Assign any day for eat to the Ostrich.
+		o.setDayToEat(Days.WEDNESDAY);
+
+		Scanner scan = new Scanner(System.in);
+		boolean control = true;
 		
-		//TODO: 14.- Create a Scanner object
-		
-		//TODO: 15.- Create a boolean variable to control a loop
-		
-		//TODO: 16.- Create a loop that asks user to guess the day the Ostrich eats.
-		//Once the user answers correctly, the loop ends.
-		//HINT: The enum classes has a method named valueOf and name.
-		//Use only if statements
-		//Plus: Use try and catch for any possible input errors.
+		do {
+			System.out.println("Try to guess the day Rocky eats: ");
+			
+			Days day = null;
+			Days dayToEat = o.getDayToEat();
+			
+			try {
+				day = Days.valueOf(scan.nextLine());
+			}catch(Exception cualquierNombre) {
+				System.out.println("Este día no existe, intenta nuevamente" + cualquierNombre.getMessage());
+				continue;
+			}
+			
+			if(day.equals(dayToEat)) {
+				System.out.println("Yes, i eat on " + day.name()) ;
+				control = false;
+			}else {
+				System.out.println("Wrong, try again");
+			}
+
+		}while(control);
 		
 	}
 

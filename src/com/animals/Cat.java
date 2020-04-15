@@ -21,5 +21,5 @@ public class Cat extends Animal{
 	public String getCatOwner(String catOwner) {
 		return "The cat's owner is: " + catOwner;
 	}
-	
+
 }
